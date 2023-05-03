@@ -1,6 +1,7 @@
 import { createClient, groq } from 'next-sanity';
+import { Bug } from 'types/Bug';
 
-export async function getBugs() {
+export async function getBugs(): Promise<Bug[]> {
   const client = createClient({
     projectId: '34kbkw0y',
     dataset: 'production',

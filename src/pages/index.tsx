@@ -5,10 +5,11 @@ import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 import { getBugs } from '../../sanity/sanity-utils';
+import { Bug } from '../../types/Bug';
 
 export default function HomePage() {
   const [loading, setLoading] = React.useState(true);
-  const [bugs, setBugs] = React.useState([]);
+  const [bugs, setBugs] = React.useState<Bug[]>([]);
 
   React.useEffect(() => {
     async function fetchData() {
@@ -30,7 +31,7 @@ export default function HomePage() {
             {loading ? (
               <p>Loading...</p>
             ) : (
-              bugs.map((bug: any) => <div key={bug._id}>{bug.name}</div>)
+              bugs.map((bug) => <div key={bug._id}>{bug.name}</div>)
             )}
           </div>
         </section>
