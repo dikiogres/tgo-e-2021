@@ -45,7 +45,7 @@ export default function HomePage() {
                   <Link
                     href={`/bugs/${bug.slug}`}
                     key={bug._id}
-                    className='rounded-lg border-2 border-gray-500 p-1 shadow-lg transition duration-500 hover:scale-105 hover:border-blue-500 hover:shadow-2xl'
+                    className='rounded-lg border-2 border-gray-500 p-1 shadow-lg transition duration-500 hover:scale-105 hover:border-blue-500 hover:shadow-xl'
                   >
                     {bug.image && (
                       <Image
