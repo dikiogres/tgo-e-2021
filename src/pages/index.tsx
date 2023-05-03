@@ -28,7 +28,7 @@ export default function HomePage() {
           <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
             <Vercel className='text-5xl' />
             <h1 className='mt-4'>Distributed Properties</h1>
-            <p className='mt-2 text-sm text-gray-800'>Notion</p>
+            {/* <p className='mt-2 text-sm text-gray-800'>Notion</p> */}
             <p className='mt-2 text-sm text-gray-700'>
               <ArrowLink href='https://github.com/dzikrisyairozi'>
                 See the repository
