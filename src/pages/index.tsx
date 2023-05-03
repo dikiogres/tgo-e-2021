@@ -28,11 +28,14 @@ export default function HomePage() {
         <section className='bg-white'>
           <div className='mx-auto max-w-5xl py-20'>
             <h1 className='text-7xl font-extrabold'>
+              Distributed&nbsp;
               <span className='bg-gradient-to-r from-blue-400 via-red-500 to-yellow-600 bg-clip-text text-transparent'>
-                Distributed Properties
+                Properties
               </span>
             </h1>
-            <p className='mt-3 text-xl text-gray-600'>Bug List Showcase</p>
+            <p className='mt-3 text-xl font-semibold text-gray-600'>
+              Bug List Showcase
+            </p>
             <h2 className='mt-24 text-3xl font-bold text-gray-700'>Ray</h2>
             {loading ? (
               <p>Loading...</p>
