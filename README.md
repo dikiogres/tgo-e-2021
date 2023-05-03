@@ -1,4 +1,5 @@
-# Notion Distributed Properties
+# Simple and Efficient Distributed 
+Property Testing
 
 ## Features
 
