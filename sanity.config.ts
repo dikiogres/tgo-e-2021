@@ -1,16 +1,16 @@
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
 
-import schemas from './sanity/schemas';
+// import schemas from "./sanity/schemas"
 
 const config = defineConfig({
-  projectId: 'txd29ab2',
+  projectId: '34kbkw0y',
   dataset: 'production',
-  title: 'My Personal Website',
-  apiVersion: '2023-03-09',
+  title: 'Distributed Properties',
+  apiVersion: '2023-05-03',
   basePath: '/admin',
   plugins: [deskTool()],
-  schema: { types: schemas },
+  // schema: { types: schemas },
 });
 
 export default config;
