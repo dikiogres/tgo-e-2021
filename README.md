@@ -1,5 +1,4 @@
-# Simple and Efficient Distributed 
-Property Testing
+# Simple and Efficient Distributed Property Testing
 
 ## Features
 
