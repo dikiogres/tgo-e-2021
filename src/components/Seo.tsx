@@ -5,17 +5,17 @@ import { openGraph } from '@/lib/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Notion Distributed Properties',
-  siteName: 'Notion Distributed Properties',
-  description: 'Notion Distributed Properties',
-  url: 'https://notion.dist-properties.site',
+  title: 'Distributed Properties',
+  siteName: 'Distributed Properties',
+  description: 'Distributed Properties',
+  url: 'https://www.dist-properties.site',
   type: 'website',
   robots: 'follow, index',
   /**
    * No need to be filled, will be populated with openGraph function
    * If you wish to use a normal image, just specify the path below
    */
-  image: 'https://notion.dist-properties.site/',
+  image: 'https://www.dist-properties.site/',
 };
 
 type SeoProps = {
