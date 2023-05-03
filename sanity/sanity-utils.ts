@@ -1,6 +1,6 @@
 import { createClient, groq } from 'next-sanity';
 
-export async function getProjects() {
+export async function getBugs() {
   const client = createClient({
     projectId: '34kbkw0y',
     dataset: 'production',
