@@ -1,4 +1,4 @@
-# Simple and Efficient Distributed Property Testing
+# [Simple and Efficient Distributed Property Testing](https://docs.google.com/presentation/d/1JPhiq5t-a6yAexOtV3-Dd6q4BVIl0H4NX8VJH0YzSs8/edit#slide=id.g14072da8f76_0_0)
 
 ## Features
 
