@@ -3,6 +3,9 @@ import Link from 'next/link';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
+import ArrowLink from '@/components/links/ArrowLink';
+import ButtonLink from '@/components/links/ButtonLink';
+import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
 import { getBugs } from '../../sanity/sanity-utils';
@@ -36,7 +39,25 @@ export default function HomePage() {
             <p className='mt-3 text-xl font-semibold text-gray-600'>
               Bug List Showcase
             </p>
-            <h2 className='mt-24 text-3xl font-bold text-gray-700'>Ray</h2>
+            <div className='mt-24 flex items-end'>
+              <p>
+                <span className='text-3xl font-bold text-gray-700'>Ray | </span>
+              </p>
+              <UnderlineLink
+                href='https://docs.dist-properties.site/'
+                className='hover:text-blue-500'
+              >
+                &nbsp;What is Ray?
+              </UnderlineLink>
+            </div>
+            <ArrowLink
+              as={ButtonLink}
+              variant='light'
+              className='mt-3 inline-flex items-center'
+              href='https://github.com/ray-project/ray/issues?q=is%3Aissue+is%3Abug+is%3Aclosed'
+            >
+              Bug Source
+            </ArrowLink>
             {loading ? (
               <p>Loading...</p>
             ) : (
