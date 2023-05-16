@@ -7,6 +7,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
+import Skeleton from '@/components/Skeleton';
 
 import { getBugs } from '../../sanity/sanity-utils';
 import { Bug } from '../../types/Bug';
@@ -59,7 +60,16 @@ export default function HomePage() {
               Bug Source
             </ArrowLink>
             {loading ? (
-              <p>Loading...</p>
+              <>
+                <p>Loading data...</p>
+                <div className='mt-5 grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
+                  {bugs.map((bug) => (
+                    <div key={bug._id}>
+                      <Skeleton className='h-[150px] w-[300px]' />
+                    </div>
+                  ))}
+                </div>
+              </>
             ) : (
               <div className='mt-5 grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
                 {bugs.map((bug) => (
